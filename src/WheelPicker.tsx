@@ -250,7 +250,7 @@ interface ItemProps {
 const WheelPickerItem: React.FC<ItemProps> = ({ style, textStyle, option }) => {
   return (
     <Animated.View style={[styles.option, style]}>
-      <Text style={textStyle}>{option}</Text>
+      <Text maxFontSizeMultiplier={1} style={textStyle}>{option}</Text>
     </Animated.View>
   );
 };
